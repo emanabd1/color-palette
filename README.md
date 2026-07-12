@@ -1,16 +1,49 @@
-# React + Vite
+🎨 Color Palette Picker
+A professional, interactive React application designed to help users pick and preview colors with ease. This project features dynamic color rendering, real-time validation, and a polished user interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Interactive Palette: Select from a predefined set of colors with one-click functionality.
 
-Currently, two official plugins are available:
+Custom HEX/Color Input: Users can input their own colors via HEX, RGB, or standard CSS color names.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Dynamic Preview: A responsive preview area that updates instantly based on selection.
 
-## React Compiler
+Error Handling: Intelligent validation to catch and alert users of invalid color inputs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+"Empty" State: Professional UI feedback when no color is selected.
 
-## Expanding the ESLint configuration
+Keyboard Support: Press "Enter" to submit custom colors for a seamless workflow.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+React (Vite): Frontend framework for a fast, component-based architecture.
+
+Tailwind CSS: Utility-first styling for a clean, modern, and responsive design.
+
+State Management: Built using React useState hooks for precise control over user interactions.
+
+📂 Project Structure
+App.jsx: The main orchestrator that manages state and validation logic.
+
+components/ColorButton.jsx: A reusable component for the selectable color buttons.
+
+components/ColorPreview.jsx: A modular component that renders the color visualizer and the "empty" state.
+
+🖥️ How to Run
+Clone the repository:
+
+Bash
+git clone https://github.com/emanabd1/color-palette.git
+Install dependencies:
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+💡 Engineering Decisions
+CSS Validation: Instead of heavy libraries, I utilized new Option().style to leverage browser-native color validation, ensuring high performance.
+
+Modular Architecture: Components were separated based on the "Separation of Concerns" principle to ensure the code remains maintainable and scalable.
+
+UX-First Approach: Implemented auto-dismissing error notifications and visual feedback (like hover shadows and scaling) to create a premium user experience.
