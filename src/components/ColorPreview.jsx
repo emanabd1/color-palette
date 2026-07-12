@@ -1,19 +1,17 @@
-export default function ColorPreview({ color }) {
+export default function ColorPreview({ selectedColor }) {
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-black/20 rounded-2xl border border-white/5">
-      {color ? (
-        <div className="text-center animate-in fade-in duration-500">
+    <div className="mt-6 text-center">
+      <h2 className="font-bold text-lg mb-2">Preview:</h2>
+      {selectedColor ? (
+        <div className="flex flex-col items-center">
           <div 
-            className="w-32 h-32 rounded-2xl shadow-2xl mb-4 border-4 border-white/20"
-            style={{ backgroundColor: color.hex }}
+            className="w-32 h-32 rounded-lg shadow-md mb-2 border border-gray-200" 
+            style={{ backgroundColor: selectedColor.hex }} 
           />
-          <p className="font-bold text-xl">{color.name || "Custom"}</p>
-          <p className="text-slate-400 font-mono text-sm">{color.hex}</p>
+          <p className="font-semibold text-lg">Selected Color: {selectedColor.name}</p>
         </div>
       ) : (
-        <div className="h-32 flex items-center justify-center text-slate-500 italic">
-          No color selected yet
-        </div>
+        <p className="text-gray-500 italic">No color selected yet</p>
       )}
     </div>
   );

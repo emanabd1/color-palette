@@ -1,12 +1,12 @@
-export default function ColorButton({ color, onSelect, isActive, emoji }) {
+export default function ColorButton({ color, emoji, onSelect, isActive }) {
   return (
     <button
       onClick={() => onSelect(color)}
-      className={`p-4 rounded-2xl transition-all duration-300 transform hover:scale-110 active:scale-95
-        ${isActive ? 'ring-4 ring-white shadow-lg shadow-white/20' : 'hover:shadow-md hover:bg-white/10'}
-        bg-gray-800 border-2 ${isActive ? 'border-white' : 'border-transparent'}`}
+      className={`p-3 text-2xl rounded-xl border-2 transition-all duration-200 
+        ${isActive ? 'border-black shadow-lg scale-105 ring-2 ring-blue-500' : 'border-gray-200 hover:border-gray-400'}`}
     >
-      <span className="text-3xl">{emoji}</span>
+      {emoji}
+      <span className="ml-2 text-base font-medium">{color.name}</span>
     </button>
   );
 }
