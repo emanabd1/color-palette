@@ -1,5 +1,7 @@
 🎨 Color Palette Picker
 A professional, interactive React application designed to help users pick and preview colors with ease. This project features dynamic color rendering, real-time validation, and a polished user interface.
+
+
 ---
 
 
@@ -15,6 +17,8 @@ Error Handling: Intelligent validation to catch and alert users of invalid color
 "Empty" State: Professional UI feedback when no color is selected.
 
 Keyboard Support: Press "Enter" to submit custom colors for a seamless workflow.
+
+
 ---
 
 
@@ -33,6 +37,8 @@ App.jsx: The main orchestrator that manages state and validation logic.
 components/ColorButton.jsx: A reusable component for the selectable color buttons.
 
 components/ColorPreview.jsx: A modular component that renders the color visualizer and the "empty" state.
+
+
 ---
 
 
@@ -49,6 +55,8 @@ Start the development server:
 
 Bash
 npm run dev
+
+
 ---
 
 
