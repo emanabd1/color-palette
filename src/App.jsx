@@ -11,13 +11,11 @@ const COLORS = [
 ];
 
 export default function App() {
-  // Initializing with '' (empty string) prevents the uncontrolled component warning
   const [selectedColor, setSelectedColor] = useState(null);
   const [hexInput, setHexInput] = useState('');
   const [error, setError] = useState(null);
 
   const handleCustomSubmit = () => {
-    // Validate if the string is a recognized CSS color
     const s = new Option().style;
     s.color = hexInput;
 
@@ -38,7 +36,7 @@ export default function App() {
           Color Palette Picker
         </h1>
         
-        {/* Buttons Row */}
+        {}
         <div className="flex justify-center gap-3 mb-8">
           {COLORS.map((c) => (
             <ColorButton 
@@ -49,7 +47,7 @@ export default function App() {
           ))}
         </div>
 
-        {/* Input Box */}
+        {}
         <div className="flex gap-2 bg-gray-900 p-2 rounded-2xl shadow-inner">
           <input 
             value={hexInput}
@@ -66,7 +64,7 @@ export default function App() {
           </button>
         </div>
 
-        {/* Error Toast */}
+        {}
         {error && (
           <div className="mt-4 p-3 bg-red-100 text-red-700 font-bold rounded-xl text-center animate-bounce text-sm">
             {error}
