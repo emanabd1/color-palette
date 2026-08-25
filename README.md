@@ -66,3 +66,6 @@ CSS Validation: Instead of heavy libraries, I utilized new Option().style to lev
 Modular Architecture: Components were separated based on the "Separation of Concerns" principle to ensure the code remains maintainable and scalable.
 
 UX-First Approach: Implemented auto-dismissing error notifications and visual feedback (like hover shadows and scaling) to create a premium user experience.
+
+by Eman A
+
